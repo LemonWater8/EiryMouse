@@ -1,0 +1,37 @@
+# Android / Gradle
+*.iml
+.gradle
+/local.properties
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.ap_*
+*.class
+*.dex
+*.jks
+*.keystore
+**/generated/
+**/intermediates/
+**/outputs/
+**/kotlin/
+**/tmp/
+
+# IDE / editor
+/.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Python cache / bytecode
+/windows/__pycache__/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Logs / misc
+*.log
+*.orig

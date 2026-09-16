@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.EiryMouse" parent="android:Theme.Material.Light.NoActionBar">
+        <!--
+            Keep the Activity window opaque.
+
+            MainScreen rebuilds its view hierarchy inside onConfigurationChanged().
+            With a translucent/transparent window, the short interval between the
+            physical rotation and the first frame of the rebuilt hierarchy exposed
+            the surface behind the Activity as a black strip (bottom in portrait,
+            right side in landscape).  Use the same Win98 desktop teal as the normal
+            root background so rotation never exposes black behind the UI.
+
+            Floating is rendered by FloatingOverlayService and does not require the
+            Activity window itself to be translucent.
+        -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">#008080</item>
+        <item name="android:colorBackground">#008080</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
